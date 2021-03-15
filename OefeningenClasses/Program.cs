@@ -55,6 +55,7 @@ namespace OefeningenClasses
             Driehoek driehoek = new Driehoek();
             driehoek.Basis = 5;
             driehoek.Hoogte = 10;
+            Console.WriteLine("hier");
             driehoek.ToonOppervlakte();
 
             //Oefening 3
