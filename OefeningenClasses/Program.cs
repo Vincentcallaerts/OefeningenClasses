@@ -70,17 +70,18 @@ namespace OefeningenClasses
             student.PuntenComunicatie = 15;
             student.PuntenProgrammingPrinciples = 15;
             student.PuntenWebTech = 15;
+            Console.WriteLine(student.GeefOverzicht()); ;
 
             //Oefening 1
             Nummers nummer = new Nummers();
             nummer.Getal1 = 5;
-            nummer.Getal2 = 0;
+            nummer.Getal2 = 2;
             Console.WriteLine(nummer.Som()); ;
             Console.WriteLine(nummer.Verschil());
             Console.WriteLine(nummer.Product());
             Console.WriteLine(nummer.Quotient());
 
-            Console.WriteLine(student.GeefOverzicht()); ;
+            
             
             Console.ReadLine();
         }
