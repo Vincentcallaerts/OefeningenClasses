@@ -25,7 +25,7 @@ namespace OefeningenClasses
         public void ToonOppervlakte()
         {
 
-            Console.WriteLine(basis * hoogte);
+            Console.WriteLine(Convert.ToDouble(basis * hoogte)/2);
 
         }
 

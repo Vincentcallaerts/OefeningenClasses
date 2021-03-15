@@ -14,13 +14,25 @@ namespace OefeningenClasses
         public int Breete
         {
             get { return breete; }
-            set { breete = value; }
+            set
+            {
+                if (value >=1)
+                {
+                    lengte = value;
+                } 
+            }
         }
 
         public int Lengte
         {
             get { return lengte; }
-            set { lengte = value; }
+            set
+            {
+                if (value >= 1)
+                {
+                    breete = value;
+                }
+            }
         }
         public void ToonOppervlakte()
         {
