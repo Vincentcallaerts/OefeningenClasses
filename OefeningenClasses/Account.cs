@@ -65,7 +65,7 @@ namespace OefeningenClasses
             {
                 Status = AccountStatus.Dood;
             }
-            if (bedrag <= -100)
+            if (bedrag <= 0 && bedrag > -100)
             {
                 Status = AccountStatus.Rood;
             }

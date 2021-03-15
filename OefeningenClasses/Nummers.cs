@@ -43,7 +43,7 @@ namespace OefeningenClasses
         public double Quotient()
         {
             if (getal2 != 0) {
-                return getal1 / getal2;
+                return Convert.ToDouble(getal1) / getal2;
             }
             else
             {

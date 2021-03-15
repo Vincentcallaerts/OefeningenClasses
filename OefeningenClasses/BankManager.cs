@@ -27,7 +27,7 @@ namespace OefeningenClasses
             }
             else
             {
-                Console.WriteLine($"Kan account niet aanmaken {account.Rekeningnummer} bestaat al");
+                Console.WriteLine($"Kan account niet aanmaken {account.Rekeningnummer} rekenning bestaat al");
             }
             
         }

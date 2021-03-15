@@ -23,17 +23,25 @@ namespace OefeningenClasses
     {
         static void Main(string[] args)
         {
+
             //Oefening 6
             BankManager bank = new BankManager();
+
             Account account = new Account("Vincent", "Be73305249......", 42069);
             Account account2 = new Account("Vincent", "Be73306249......", 100);
+            Account account3 = new Account("Vincent", "Be73305249......", 42069);
+
             bank.AddAccount(account);
             bank.AddAccount(account2);
+            bank.AddAccount(account3);
+
             bank.ShowAccount(account.Rekeningnummer);
             bank.ShowAccount(account2.Rekeningnummer);
             bank.SchrijfOverNaar(account2.Rekeningnummer, account.Rekeningnummer, 1000);
+
             bank.ShowAccount(account.Rekeningnummer);
             bank.ShowAccount(account2.Rekeningnummer);
+
             //Oefening 5
             Speler speler = new Speler(69420,"vincent",false,true,"Cadet");
             speler.GooiBal();
@@ -51,19 +59,8 @@ namespace OefeningenClasses
 
             //Oefening 3
             Pizza pizza1 = new Pizza();
-            Pizza pizza2 = new Pizza();
-
-            
+            Pizza pizza2 = new Pizza();            
             Console.WriteLine(pizza1.Prijs);
-
-            //Oefening 1
-            Nummers nummer = new Nummers();
-            nummer.Getal1 = 5;
-            nummer.Getal2 = 0;
-            Console.WriteLine(nummer.Som()); ;
-            Console.WriteLine(nummer.Verschil());
-            Console.WriteLine(nummer.Product());
-            Console.WriteLine(nummer.Quotient());
 
             //Oefening 2
             Student student = new Student();
@@ -74,10 +71,17 @@ namespace OefeningenClasses
             student.PuntenProgrammingPrinciples = 15;
             student.PuntenWebTech = 15;
 
+            //Oefening 1
+            Nummers nummer = new Nummers();
+            nummer.Getal1 = 5;
+            nummer.Getal2 = 0;
+            Console.WriteLine(nummer.Som()); ;
+            Console.WriteLine(nummer.Verschil());
+            Console.WriteLine(nummer.Product());
+            Console.WriteLine(nummer.Quotient());
+
             Console.WriteLine(student.GeefOverzicht()); ;
-
             
-
             Console.ReadLine();
         }
     }
