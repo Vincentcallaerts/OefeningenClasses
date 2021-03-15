@@ -39,11 +39,7 @@ namespace OefeningenClasses
             get { return rugnummer; }
             set { rugnummer = value; }
         }
-        public string V1 { get; }
-        public int V2 { get; }
-        public bool V3 { get; }
-        public bool V4 { get; }
-        public string V5 { get; }
+        
 
         public Speler(int rugnummer,string naam,bool isDoelman, bool isReserve, string reeks) 
         {
