@@ -43,6 +43,11 @@ namespace OefeningenClasses
         }
         public void WithdrawFunds(int getal)
         {
+            if (getal > bedrag)
+            {
+                bedrag = 0;
+                Console.WriteLine("niet al het geld kon worden afgehaald ");
+            }
             bedrag -= getal;
             ChangeStatus();
         }
@@ -57,7 +62,7 @@ namespace OefeningenClasses
         }
         public string Info()
         {
-            return $"{naam}, {rekkeningNummer}: {bedrag}";
+            return $"{naam}, {rekkeningNummer}: {bedrag} ----- {status}";
         }
         public void ChangeStatus()
         {

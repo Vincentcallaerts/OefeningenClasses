@@ -43,6 +43,17 @@ namespace OefeningenClasses
             }
         
         }
+        public void AllShowAccount(string rekkeningNummer)
+        {
+
+            for (int i = 0; i < accounts.Count; i++)
+            {
+            
+                    Console.WriteLine(accounts[i].Info() + " " + accounts[i].Status);
+                
+            }
+
+        }
         public void SchrijfOverNaar(string rekkeningNummer1, string rekkeningNummer2, int begrag)
         {
 
