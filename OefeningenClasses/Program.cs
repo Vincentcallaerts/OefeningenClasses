@@ -22,7 +22,6 @@ namespace OefeningenClasses
     class Program
     {
 
-        static void
         static void Main(string[] args)
         {
 
@@ -36,13 +35,11 @@ namespace OefeningenClasses
             bank.AddAccount(account);
             bank.AddAccount(account2);
             bank.AddAccount(account3);
-
-            bank.ShowAccount(account.Rekeningnummer);
-            bank.ShowAccount(account2.Rekeningnummer);
+            bank.CreeerTienerRekening("vincent");
+            bank.AllShowAccount();
             bank.SchrijfOverNaar(account2.Rekeningnummer, account.Rekeningnummer, 1000);
 
-            bank.ShowAccount(account.Rekeningnummer);
-            bank.ShowAccount(account2.Rekeningnummer);
+            bank.AllShowAccount();
 
             //Oefening 5
             Speler speler = new Speler(69420,"vincent",false,true,"Cadet");

@@ -15,6 +15,11 @@ namespace OefeningenClasses
         {                      
              accounts.Add(account);                             
         }
+        public void CreeerTienerRekening(string naam)
+        {
+            Account temp = new Account(naam);
+            accounts.Add(temp);
+        }
         public void ShowAccount(string rekkeningNummer)
         {
 
@@ -27,7 +32,7 @@ namespace OefeningenClasses
             }
         
         }
-        public void AllShowAccount(string rekkeningNummer)
+        public void AllShowAccount()
         {
 
             for (int i = 0; i < accounts.Count; i++)
