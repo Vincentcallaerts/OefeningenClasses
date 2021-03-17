@@ -34,12 +34,21 @@ namespace OefeningenClasses
             get { return naam; }
             set { naam = value; }
         }
+        public Account(string naam)
+        {
+            this.naam = naam;
+            rekkeningNummer = "Tienerrekening";
+            bedrag = 50;
+            ChangeStatus();
+
+        }
         public Account(string naam, string rekkeningNummer, double bedrag)
         {
             this.naam = naam;
             this.rekkeningNummer = rekkeningNummer;
             this.bedrag = bedrag;
-            status = AccountStatus.Groen; 
+            ChangeStatus();
+
         }
         public void WithdrawFunds(int getal)
         {
@@ -70,7 +79,7 @@ namespace OefeningenClasses
             {
                 Status = AccountStatus.Dood;
             }
-            if (bedrag <= 0 && bedrag > -100)
+            if (bedrag <= 0 && bedrag >= -100)
             {
                 Status = AccountStatus.Rood;
             }

@@ -21,6 +21,8 @@ namespace OefeningenClasses
 
     class Program
     {
+
+        static void
         static void Main(string[] args)
         {
 
@@ -28,7 +30,7 @@ namespace OefeningenClasses
             BankManager bank = new BankManager();
 
             Account account = new Account("Vincent", "Be73305249......", 42069);
-            Account account2 = new Account("Vincent", "Be73306249......", 100);
+            Account account2 = new Account("Vincent", "Be73306249......", -100);
             Account account3 = new Account("Vincent", "Be73305249......", 42069);
 
             bank.AddAccount(account);

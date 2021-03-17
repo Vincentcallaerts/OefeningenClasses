@@ -12,24 +12,8 @@ namespace OefeningenClasses
         private List<Account> accounts = new List<Account> { };
 
         public void AddAccount(Account account)
-        {
-            int teller = 0;
-            for (int i = 0; i < accounts.Count; i++)
-            {
-                if (account.Rekeningnummer == accounts[i].Rekeningnummer)
-                {
-                    teller++;
-                }
-            }
-            if (teller == 0)
-            {
-                accounts.Add(account);
-            }
-            else
-            {
-                Console.WriteLine($"Kan account niet aanmaken {account.Rekeningnummer} rekenning bestaat al");
-            }
-            
+        {                      
+             accounts.Add(account);                             
         }
         public void ShowAccount(string rekkeningNummer)
         {
@@ -69,5 +53,6 @@ namespace OefeningenClasses
                 }
             }
         }
+        
     }
 }
